@@ -14,5 +14,15 @@ namespace car
         public int HorsePower;
         public int Gears;
         public bool EngineOn;
+        public int MaxSpeed;
+
+        public void ShowInfo()
+        {
+            Console.WriteLine($"Car Info: {Manufacturer}, {CarColor}, {ModelYear}, {HorsePower}");
+        }
+        public void Drive()
+        {
+            Console.WriteLine("The car is driving.");
+        }
     }
 }

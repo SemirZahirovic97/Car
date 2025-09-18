@@ -11,14 +11,34 @@
             myCar.HorsePower = 250;
             myCar.Gears = 6;
             myCar.EngineOn = true;
+            myCar.MaxSpeed = 240;
 
-            Console.WriteLine($"Brand: {myCar.Manufacturer}");
-            Console.WriteLine($"Color: {myCar.CarColor}");
-            Console.WriteLine($"Year: {myCar.ModelYear}");
-            Console.WriteLine($"HorsePower: {myCar.HorsePower}");
-            Console.WriteLine($"Gears: {myCar.Gears}");
-            Console.WriteLine($"Engine On: {myCar.EngineOn}");
-            Console.ReadLine();
+           
+
+            car mclaren = new car();
+            mclaren.Manufacturer = "McLaren";
+            mclaren.CarColor = "Orange";
+            mclaren.ModelYear = 2023;
+            mclaren.HorsePower = 800;
+            mclaren.Gears = 7;
+            mclaren.EngineOn = true;
+            mclaren.MaxSpeed = 350;
+
+            car fiat = new car();
+            fiat.Manufacturer = "Fiat";
+            fiat.CarColor = "White";
+            fiat.ModelYear = 2018;
+            fiat.HorsePower = 120;
+            fiat.Gears = 5;
+            fiat.EngineOn = false;
+            fiat.MaxSpeed = 180;
+
+            mclaren.ShowInfo();
+            mclaren.Drive();
+
+            fiat.ShowInfo();
+            fiat.Drive();
+
 
         }
     }
