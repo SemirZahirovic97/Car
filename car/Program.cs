@@ -14,7 +14,7 @@
             mclaren.Gears = 7;
             mclaren.EngineOn = true;
             mclaren.MaxSpeed = 350;
-            mclaren.Type = car.CarType.Gasoline; 
+            mclaren.Type = car.CarType.Gasoline;
 
             car fiat = new car();
             fiat.Manufacturer = "Fiat";
@@ -36,7 +36,9 @@
             fiat.Honk();
             fiat.Fuel();
 
-            fiat.IsFasterThan(otherCar: mclaren);
+
+
+            fiat.IsFasterThan(mclaren);
 
         }
     }

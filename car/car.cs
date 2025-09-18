@@ -16,7 +16,7 @@ namespace car
         public bool EngineOn;
         public int MaxSpeed;
 
-        public enum CarType
+        internal enum CarType
         {
             Electric,
             Gasoline,
@@ -24,7 +24,7 @@ namespace car
             Diesel
         }
 
-        public CarType Type; // Add an instance field to store the car's type
+        public CarType Type; // Add a field to store the car's type
 
         public void ShowInfo()
         {
@@ -64,15 +64,15 @@ namespace car
         {
             if (otherCar.MaxSpeed > MaxSpeed)
             {
-                Console.WriteLine($"Car {otherCar.Manufacturer} is faster than {otherCar.Manufacturer}");
+                Console.WriteLine($"Car {otherCar.Manufacturer} is faster than {Manufacturer}");
             }
             else if (otherCar.MaxSpeed < MaxSpeed)
             {
-                Console.WriteLine($"{otherCar.Manufacturer} is faster than {otherCar.Manufacturer}");
+                Console.WriteLine($"{Manufacturer} is faster than {otherCar.Manufacturer}");
             }
             else
             {
-                Console.WriteLine($"{otherCar.Manufacturer} and {otherCar.Manufacturer} have the same speed.");
+                Console.WriteLine($"{Manufacturer} and {otherCar.Manufacturer} have the same speed.");
             }
         }
     }

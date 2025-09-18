@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace car
 {
-    public enum CarType
-
+    internal enum CarType
     {
         Electric,
         Gasoline,
