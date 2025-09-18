@@ -31,10 +31,14 @@
             mclaren.Honk();
             mclaren.Fuel();
 
+            Console.WriteLine("----------------------");
+
             fiat.ShowInfo();
             fiat.Drive();
             fiat.Honk();
             fiat.Fuel();
+
+            Console.WriteLine("-----------------------");
 
 
 
