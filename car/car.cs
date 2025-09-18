@@ -8,9 +8,9 @@ namespace car
 {
     internal class car
     {
-        public string Brand;
-        public string Color;
-                public int Year;
+        public string Manufacturer;
+        public string CarColor;
+                public int ModelYear;
         public int HorsePower;
         public int Gears;
         public bool EngineOn;
