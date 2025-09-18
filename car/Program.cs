@@ -18,6 +18,7 @@
             Console.WriteLine($"HorsePower: {myCar.HorsePower}");
             Console.WriteLine($"Gears: {myCar.Gears}");
             Console.WriteLine($"Engine On: {myCar.EngineOn}");
+            Console.ReadLine();
 
         }
     }
